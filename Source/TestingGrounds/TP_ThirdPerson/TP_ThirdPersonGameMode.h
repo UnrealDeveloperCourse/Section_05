@@ -1,19 +1,3 @@
-// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
-
-#pragma once
-
-#include "CoreMinimal.h"
-#include "GameFramework/GameModeBase.h"
-#include "TP_ThirdPersonGameMode.generated.h"
-
-UCLASS(minimalapi)
-class ATP_ThirdPersonGameMode : public AGameModeBase
-{
-	GENERATED_BODY()
-
-public:
-	ATP_ThirdPersonGameMode();
-};
-
-
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:9aad28df216885a98098b8829de203126cefbdaf6e1bd4fc99114cbeb2d77a48
+size 342
