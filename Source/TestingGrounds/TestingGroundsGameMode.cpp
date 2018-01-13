@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6363f20a84838986c68e44a82ee099df1e9f742f3bb67a3a34022bcddd1a820d
-size 605
+// Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
+
+#include "TestingGroundsGameMode.h"
+#include "TestingGroundsHUD.h"
+#include "Player/FirstPersonCharacter.h"
+#include "UObject/ConstructorHelpers.h"
+
+ATestingGroundsGameMode::ATestingGroundsGameMode()
+	: Super()
+{
+	// set default pawn class to our Blueprinted character
+	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnClassFinder(TEXT("/Game/Static/Player/Behavior/FirstPersonCharacter"));
+	DefaultPawnClass = PlayerPawnClassFinder.Class;
+
+	// use our custom HUD class
+	HUDClass = ATestingGroundsHUD::StaticClass();
+}
