@@ -1,7 +1,7 @@
 Binaries
 DerivedDataCache
 Intermediate
-Saved
+
 .vscode
 .vs
 *.VC.db
@@ -13,3 +13,8 @@ Saved
 *.xcodeproj
 *.xcworkspace
 Content/Mannequin/
+
+# Include Saved Content
+Saved/*
+!Saved/Screenshots
+!Saved/Downloads
