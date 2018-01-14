@@ -1,4 +1,4 @@
 # Testing Grounds
 
 
-![Current Screen Shot](TestingGrounds/Saved/Screenshots/Windows/CurrentScreenShot.png)
+![Current Screen Shot](Saved/Screenshots/Windows/CurrentScreenShot.png)
