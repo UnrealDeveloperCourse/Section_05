@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
+#include "Gun.h"
 #include "Animation/AnimInstance.h"
 #include "Kismet/GameplayStatics.h"
-#include "Gun.h"
 
 
 // Sets default values
