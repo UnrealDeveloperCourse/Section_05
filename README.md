@@ -9,3 +9,12 @@
 ## Character Movement Architecture
 
 ![Character Movement Architecture](Saved/Screenshots/Windows/character_movement_architecture.png)
+
+## Sphere Cast Collision Detection
+
+![Sphere Cast Collision Detection](Saved/Screenshots/Windows/Spawn_Collision_Detection_DebugCapsule.png)
+
+## EQS Pathfinding
+
+![EQS Pathfinding](Saved/Screenshots/Windows/EQS_Debug.png)
+
