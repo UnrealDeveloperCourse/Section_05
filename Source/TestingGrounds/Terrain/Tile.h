@@ -6,11 +6,14 @@
 #include "GameFramework/Actor.h"
 #include "Tile.generated.h"
 
+
+class UActorPool;
+
 UCLASS()
 class TESTINGGROUNDS_API ATile : public AActor
 {
 	GENERATED_BODY()
-	
+
 public:	
 	// Sets default values for this actor's properties
 	ATile();
@@ -29,6 +32,9 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UFUNCTION(BlueprintCallable, Category = "Pool")
+	void SetPool(UActorPool* InPool);
+
 private:
 	bool FindEmptyLocation(FVector& OutLocation, float Radius);
 
@@ -37,4 +43,6 @@ private:
 
 	bool CanSpawnAtLocation(FVector Location, float Radius);
 	
+	UActorPool* Pool;
+
 };
