@@ -18,3 +18,7 @@
 
 ![EQS Pathfinding](Saved/Screenshots/Windows/EQS_Debug.png)
 
+
+## Actor Life Cycle
+
+![Actor Life Cycle](Saved/Downloads/ActorLifeCycle1.png)

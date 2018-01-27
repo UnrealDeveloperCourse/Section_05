@@ -28,6 +28,17 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
+
+	UPROPERTY(EditDefaultsOnly, category = Navigation)
+	FVector NavigationBoundsOffset;
+
+	UPROPERTY(EditDefaultsOnly, category = Spawning)
+	FVector MinExtent;
+
+	UPROPERTY(EditDefaultsOnly, category = Spawning)
+	FVector MaxExtent;
+
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
@@ -45,4 +56,7 @@ private:
 	
 	UActorPool* Pool;
 
+	AActor* NavMeshBoundsVolume;
+
+	void PositionNavMeshBoundsVolume();
 };
