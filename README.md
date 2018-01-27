@@ -21,4 +21,4 @@
 
 ## Actor Life Cycle
 
-![Actor Life Cycle](Saved/Downloads/ActorLifeCycle1.png)
+![Actor Life Cycle](Saved/Downloads/ActorLifeCycle1.jpg)
