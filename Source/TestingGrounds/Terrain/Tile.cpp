@@ -94,7 +94,10 @@ void ATile::BeginPlay()
 void ATile::EndPlay(const EEndPlayReason::Type EndPlayReason)
 {
 	/*UE_LOG(LogTemp, Warning, TEXT("[%s] EndPlay"), *GetName())*/
-	Pool->Return(NavMeshBoundsVolume);
+	if (Pool != nullptr && NavMeshBoundsVolume != nullptr)
+	{
+		Pool->Return(NavMeshBoundsVolume);
+	}
 }
 
 // Called every frame
@@ -120,6 +123,7 @@ void ATile::PositionNavMeshBoundsVolume()
 		return;
 	}
 	NavMeshBoundsVolume->SetActorLocation(GetActorLocation() + NavigationBoundsOffset);
+	UE_LOG(LogTemp, Warning, TEXT("Actor Location: %s"), *NavMeshBoundsVolume->GetActorLocation().ToString())
 	GetWorld()->GetNavigationSystem()->Build();
 }
 

@@ -63,8 +63,6 @@ public:
 private:
 	void PositionNavMeshBoundsVolume();
 
-	TArray<FSpawnPosition> RandomSpawnPositions(int MinSpawn, int MaxSpawn, float Radius, float MinScale, float MaxScale);
-
 	bool FindEmptyLocation(FVector& OutLocation, float Radius);
 
 	template<class T>
