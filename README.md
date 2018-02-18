@@ -1,6 +1,8 @@
 # Testing Grounds
 
-![Gameplay footage](https://www.youtube.com/playlist?list=PLXbhb1vwcM98WjQ5YJ2dHq_fJN9ZSyxFa)
+![Current Screen Shot](Saved/Screenshots/Windows/CurrentScreenShot.png)
+
+[Gameplay footage](https://www.youtube.com/playlist?list=PLXbhb1vwcM98WjQ5YJ2dHq_fJN9ZSyxFa)
 
 
 ## Character Rotation Architecture
