@@ -4,7 +4,7 @@
 #include "Engine/World.h"
 #include "DrawDebugHelpers.h"
 #include "ActorPool.h"
-#include "AI/Navigation/NavigationSystem.h"
+#include "NavigationSystem.h"
 
 
 // Sets default values
@@ -124,7 +124,7 @@ void ATile::PositionNavMeshBoundsVolume()
 	}
 	NavMeshBoundsVolume->SetActorLocation(GetActorLocation() + NavigationBoundsOffset);
 	UE_LOG(LogTemp, Warning, TEXT("Actor Location: %s"), *NavMeshBoundsVolume->GetActorLocation().ToString())
-	GetWorld()->GetNavigationSystem()->Build();
+	FNavigationSystem::GetCurrent<UNavigationSystemV1>(GetWorld())->Build();
 }
 
 bool ATile::CanSpawnAtLocation(FVector Location, float Radius)
