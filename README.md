@@ -14,7 +14,7 @@ Move on to create new game using streamingLevels and implement things learned in
 
 ## 2018-07-22 Converted project to UE 4.20 built from source
 
-Useful if only to practice fixing issues converting a project to a new engine version. Checkout 40a580a on master and run in UE 4.18.3 to experience a smoother running project.
+Useful if only to practice fixing issues converting a project to a new engine version. Checkout 1d1972b on master and run in UE 4.18.3 to experience a smoother running project.
 
 Issues with this project
 
